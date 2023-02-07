@@ -8,7 +8,7 @@ You can improve it by adding style and other things! and for use this project yo
 - Add car with cost
 - Delete car item
 - Search in the list of cars
-- Some Value of all car in list
+- Sum cost of cars in list
 - ‌Bold name in list if you type duplicate car name
 
 ### Used packages:
