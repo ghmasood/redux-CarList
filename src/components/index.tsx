@@ -3,6 +3,7 @@ import CarForm from "./CarForm";
 import CarList from "./CarList";
 import CarSearch from "./CarSearch";
 import CarValue from "./CarValue";
+import CopyRight from "./copyRight";
 
 function CarApp() {
   return (
@@ -11,6 +12,7 @@ function CarApp() {
       <CarList />
       <CarSearch />
       <CarValue />
+      <CopyRight />
     </div>
   );
 }
