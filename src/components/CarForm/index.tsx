@@ -1,5 +1,4 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import { addCar, changeCost, changeName } from "../../store";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 
@@ -18,7 +17,9 @@ function CarForm() {
   };
   const handleOnSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    dispatch(addCar({ name: formData.name, cost: formData.cost }));
+    if (formData.name !== "" && formData.cost !== 0) {
+      dispatch(addCar({ name: formData.name, cost: formData.cost }));
+    }
   };
   return (
     <form className="flex w-full justify-between" onSubmit={handleOnSubmit}>
