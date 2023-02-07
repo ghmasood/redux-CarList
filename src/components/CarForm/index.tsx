@@ -54,7 +54,7 @@ function CarForm() {
       </div>
       <button
         type="submit"
-        className="bg-sky-800 text-white px-12 rounded-lg h-10"
+        className="bg-sky-800 hover:bg-sky-700 duration-300 text-white px-12 rounded-lg h-10"
       >
         Submit
       </button>
