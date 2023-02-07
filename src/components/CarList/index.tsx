@@ -3,7 +3,11 @@ import { removeCar } from "../../store";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 
 function CarList() {
-  const AllCars = useAppSelector((store) => store.cars.carsList);
+  const AllCars = useAppSelector((store) =>
+    store.cars.carsList.filter((c) =>
+      c.name.toLowerCase().includes(store.cars.searchTerm.toLowerCase())
+    )
+  );
   const dispatch = useAppDispatch();
   const handleCarDelete = (id: string) => {
     dispatch(removeCar(id));
