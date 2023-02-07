@@ -20,7 +20,9 @@ function CarList() {
           className="flex px-2 h-11 items-center bg-sky-50 shadow-sm justify-between rounded-lg"
         >
           <span className="text-2xl font-normal basis-1/3">{c.name}</span>
-          <span className="text-2xl font-light basis-1/3">${c.cost}</span>
+          <span className="text-2xl font-light basis-1/3">
+            ${c.cost.toLocaleString()}
+          </span>
           <button
             onClick={() => {
               handleCarDelete(c.id);
